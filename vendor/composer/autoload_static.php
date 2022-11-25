@@ -7,6 +7,17 @@ namespace Composer\Autoload;
 class ComposerStaticInite2c5ce355ae324a1834d914bfd363fb0
 {
     public static $prefixLengthsPsr4 = array (
+        'm' => 
+        array (
+            'muyomu\\router\\' => 14,
+            'muyomu\\log4p\\' => 13,
+            'muyomu\\http\\' => 12,
+            'muyomu\\framework\\' => 17,
+            'muyomu\\executor\\' => 16,
+            'muyomu\\dpara\\' => 13,
+            'muyomu\\database\\' => 16,
+            'muyomu\\aop\\' => 11,
+        ),
         'M' => 
         array (
             'Muyomu\\Auth\\' => 12,
@@ -14,6 +25,38 @@ class ComposerStaticInite2c5ce355ae324a1834d914bfd363fb0
     );
 
     public static $prefixDirsPsr4 = array (
+        'muyomu\\router\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/router/src',
+        ),
+        'muyomu\\log4p\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/log4p/src',
+        ),
+        'muyomu\\http\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/http/src',
+        ),
+        'muyomu\\framework\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/framework/src',
+        ),
+        'muyomu\\executor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/executor/src',
+        ),
+        'muyomu\\dpara\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/dpara/src',
+        ),
+        'muyomu\\database\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/database/src',
+        ),
+        'muyomu\\aop\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/aop/src',
+        ),
         'Muyomu\\Auth\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',

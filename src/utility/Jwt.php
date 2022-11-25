@@ -1,6 +1,6 @@
 <?php
 
-namespace muyomu\auth;
+namespace muyomu\auth\utility;
 
 class Jwt
 {

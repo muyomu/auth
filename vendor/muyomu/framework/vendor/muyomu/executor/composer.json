@@ -1,0 +1,23 @@
+{
+    "name": "muyomu/executor",
+    "description": "The executor of muyomu framework",
+    "type": "library",
+    "license": "apache-2.0",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "muyomu\\executor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mutian",
+            "email": "mutian-xiangcai@outlook.com"
+        }
+    ],
+    "require": {
+        "muyomu/http": "2.0.1",
+        "muyomu/aop": "^1.0.4",
+        "muyomu/log4p": "1.0.1"
+    }
+}
