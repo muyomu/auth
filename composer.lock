@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80e381595d34fb979a5f51ad16b4c9b0",
+    "content-hash": "5b4e86cb18d924514e882fb4a8236057",
     "packages": [
         {
             "name": "muyomu/aop",
@@ -123,20 +123,20 @@
         },
         {
             "name": "muyomu/executor",
-            "version": "v2.0.3",
+            "version": "v2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/executor.git",
-                "reference": "fb9ba93e2b65a39f85df727ff8988a1b26cbe80e"
+                "reference": "2e674170df59199d7bab3f09c2b8ca4841b9e0f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/executor/zipball/fb9ba93e2b65a39f85df727ff8988a1b26cbe80e",
-                "reference": "fb9ba93e2b65a39f85df727ff8988a1b26cbe80e",
+                "url": "https://api.github.com/repos/muyomu/executor/zipball/2e674170df59199d7bab3f09c2b8ca4841b9e0f2",
+                "reference": "2e674170df59199d7bab3f09c2b8ca4841b9e0f2",
                 "shasum": ""
             },
             "require": {
-                "muyomu/aop": "^1.0.5",
+                "muyomu/aop": "^1.0.6",
                 "muyomu/http": "2.0.1",
                 "muyomu/log4p": "1.0.1"
             },
@@ -159,29 +159,71 @@
             "description": "The executor of muyomu framework",
             "support": {
                 "issues": "https://github.com/muyomu/executor/issues",
-                "source": "https://github.com/muyomu/executor/tree/v2.0.3"
+                "source": "https://github.com/muyomu/executor/tree/v2.0.4"
             },
-            "time": "2022-11-17T12:32:26+00:00"
+            "time": "2022-11-19T01:04:28+00:00"
         },
         {
-            "name": "muyomu/framework",
-            "version": "v2.0.3",
+            "name": "muyomu/filter",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/muyomu/framework.git",
-                "reference": "d62701d7b4736439ea8b886b47728e3fb216c5fd"
+                "url": "https://github.com/muyomu/filter.git",
+                "reference": "45071e9916b76fddb382cf80f2119a229b32dcd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/framework/zipball/d62701d7b4736439ea8b886b47728e3fb216c5fd",
-                "reference": "d62701d7b4736439ea8b886b47728e3fb216c5fd",
+                "url": "https://api.github.com/repos/muyomu/filter/zipball/45071e9916b76fddb382cf80f2119a229b32dcd9",
+                "reference": "45071e9916b76fddb382cf80f2119a229b32dcd9",
+                "shasum": ""
+            },
+            "require": {
+                "muyomu/http": "2.0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Muyomu\\Filter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian",
+                    "email": "bhfqlz@outlook.com"
+                }
+            ],
+            "description": "The filter framework for muyomu web framework",
+            "support": {
+                "issues": "https://github.com/muyomu/filter/issues",
+                "source": "https://github.com/muyomu/filter/tree/v1.0.2"
+            },
+            "time": "2022-11-25T11:13:29+00:00"
+        },
+        {
+            "name": "muyomu/framework",
+            "version": "v2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muyomu/framework.git",
+                "reference": "158fb3040cbaf74b2f4a787c155b9936abb4ea78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muyomu/framework/zipball/158fb3040cbaf74b2f4a787c155b9936abb4ea78",
+                "reference": "158fb3040cbaf74b2f4a787c155b9936abb4ea78",
                 "shasum": ""
             },
             "require": {
                 "muyomu/database": "2.0.1",
                 "muyomu/dpara": "2.0.1",
-                "muyomu/executor": "2.0.3",
+                "muyomu/executor": "2.0.4",
+                "muyomu/filter": "1.0.2",
                 "muyomu/http": "2.0.1",
+                "muyomu/log4p": "1.0.1",
                 "muyomu/router": "2.0.1",
                 "php": ">=8.1"
             },
@@ -204,9 +246,9 @@
             "description": "The booter of muyomu framework",
             "support": {
                 "issues": "https://github.com/muyomu/framework/issues",
-                "source": "https://github.com/muyomu/framework/tree/v2.0.3"
+                "source": "https://github.com/muyomu/framework/tree/v2.0.5"
             },
-            "time": "2022-11-17T12:33:24+00:00"
+            "time": "2022-11-25T11:17:54+00:00"
         },
         {
             "name": "muyomu/http",

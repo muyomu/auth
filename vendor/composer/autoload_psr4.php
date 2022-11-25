@@ -13,6 +13,7 @@ return array(
     'muyomu\\executor\\' => array($vendorDir . '/muyomu/executor/src'),
     'muyomu\\dpara\\' => array($vendorDir . '/muyomu/dpara/src'),
     'muyomu\\database\\' => array($vendorDir . '/muyomu/database/src'),
+    'muyomu\\auth\\' => array($baseDir . '/src'),
     'muyomu\\aop\\' => array($vendorDir . '/muyomu/aop/src'),
-    'Muyomu\\Auth\\' => array($baseDir . '/src'),
+    'Muyomu\\Filter\\' => array($vendorDir . '/muyomu/filter/src'),
 );

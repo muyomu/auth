@@ -4,24 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98f06a2fb96d5a0503532fd78152a304",
+    "content-hash": "c8771e5ed39d1eee26ebcf9aaf26bde9",
     "packages": [
         {
             "name": "muyomu/aop",
-            "version": "v1.0.5",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/aop.git",
-                "reference": "78280b80b5e0b7d51ad1799240981565fedc630a"
+                "reference": "ed9e394251d7436f52df639395ba3b5feff7aa8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/aop/zipball/78280b80b5e0b7d51ad1799240981565fedc630a",
-                "reference": "78280b80b5e0b7d51ad1799240981565fedc630a",
+                "url": "https://api.github.com/repos/muyomu/aop/zipball/ed9e394251d7436f52df639395ba3b5feff7aa8d",
+                "reference": "ed9e394251d7436f52df639395ba3b5feff7aa8d",
                 "shasum": ""
-            },
-            "require": {
-                "muyomu/log4p": "1.0.1"
             },
             "type": "library",
             "autoload": {
@@ -42,9 +39,9 @@
             "description": "The aop framework for muyomu web framework",
             "support": {
                 "issues": "https://github.com/muyomu/aop/issues",
-                "source": "https://github.com/muyomu/aop/tree/v1.0.5"
+                "source": "https://github.com/muyomu/aop/tree/v1.0.6"
             },
-            "time": "2022-11-17T12:31:04+00:00"
+            "time": "2022-11-19T00:31:50+00:00"
         },
         {
             "name": "muyomu/database",
