@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2afcad963c67a0495f9ca890cc623a9a",
+    "content-hash": "efd7c51d9e522f962945248aec996062",
     "packages": [
         {
             "name": "muyomu/aop",
@@ -205,16 +205,16 @@
         },
         {
             "name": "muyomu/framework",
-            "version": "v2.0.6",
+            "version": "v2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/framework.git",
-                "reference": "3b28bebcd27831f181eb111154e738b70061dd7e"
+                "reference": "79c2f199c75420a586fc82dabb4d832369c700ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/framework/zipball/3b28bebcd27831f181eb111154e738b70061dd7e",
-                "reference": "3b28bebcd27831f181eb111154e738b70061dd7e",
+                "url": "https://api.github.com/repos/muyomu/framework/zipball/79c2f199c75420a586fc82dabb4d832369c700ba",
+                "reference": "79c2f199c75420a586fc82dabb4d832369c700ba",
                 "shasum": ""
             },
             "require": {
@@ -246,9 +246,9 @@
             "description": "The booter of muyomu framework",
             "support": {
                 "issues": "https://github.com/muyomu/framework/issues",
-                "source": "https://github.com/muyomu/framework/tree/v2.0.6"
+                "source": "https://github.com/muyomu/framework/tree/v2.0.8"
             },
-            "time": "2022-11-25T11:27:35+00:00"
+            "time": "2022-11-25T11:32:49+00:00"
         },
         {
             "name": "muyomu/http",

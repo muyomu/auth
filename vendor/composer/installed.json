@@ -214,17 +214,17 @@
         },
         {
             "name": "muyomu/framework",
-            "version": "v2.0.6",
-            "version_normalized": "2.0.6.0",
+            "version": "v2.0.8",
+            "version_normalized": "2.0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/framework.git",
-                "reference": "3b28bebcd27831f181eb111154e738b70061dd7e"
+                "reference": "79c2f199c75420a586fc82dabb4d832369c700ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/framework/zipball/3b28bebcd27831f181eb111154e738b70061dd7e",
-                "reference": "3b28bebcd27831f181eb111154e738b70061dd7e",
+                "url": "https://api.github.com/repos/muyomu/framework/zipball/79c2f199c75420a586fc82dabb4d832369c700ba",
+                "reference": "79c2f199c75420a586fc82dabb4d832369c700ba",
                 "shasum": ""
             },
             "require": {
@@ -237,7 +237,7 @@
                 "muyomu/router": "2.0.1",
                 "php": ">=8.1"
             },
-            "time": "2022-11-25T11:27:35+00:00",
+            "time": "2022-11-25T11:32:49+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -258,7 +258,7 @@
             "description": "The booter of muyomu framework",
             "support": {
                 "issues": "https://github.com/muyomu/framework/issues",
-                "source": "https://github.com/muyomu/framework/tree/v2.0.6"
+                "source": "https://github.com/muyomu/framework/tree/v2.0.8"
             },
             "install-path": "../muyomu/framework"
         },
