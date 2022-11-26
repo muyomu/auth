@@ -3,7 +3,6 @@
 namespace muyomu\config;
 
 use muyomu\config\annotation\Configuration;
-use muyomu\config\exception\FieldConfigException;
 use muyomu\config\utility\ConfigUtility;
 use ReflectionClass;
 use ReflectionException;
@@ -22,7 +21,8 @@ class ConfigParser
     }
 
     /**
-     * @throws FieldConfigException
+     * @param string $configClassName
+     * @return array
      */
     public function getConfigData(string $configClassName):array{
         $reflectionClass = $this->utility->getConfigClassInstance($configClassName);
@@ -49,7 +49,9 @@ class ConfigParser
     }
 
     /**
-     * @throws FieldConfigException
+     * @param array $fieldData
+     * @param array $defaultData
+     * @return array
      */
     private function resolveConfigData(array &$fieldData, array &$defaultData):array{
         $keys = array_keys($defaultData);
@@ -58,12 +60,12 @@ class ConfigParser
                 if ($this->checkForAssocArray($defaultData[$key])){
                     $this->resolveConfigData($fieldData[$key],$defaultData[$key]);
                 }else{
-                    if (gettype($fieldData[$key]) == gettype($defaultData[$key]) || isset($fieldData[$key])){
+                    if ((gettype($fieldData[$key]) == gettype($defaultData[$key])) && isset($fieldData[$key])){
                         $defaultData[$key] = $fieldData[$key];
                     }
                 }
             }else{
-                if (gettype($fieldData[$key]) == gettype($defaultData[$key]) || isset($fieldData[$key])){
+                if ((gettype($fieldData[$key]) == gettype($defaultData[$key])) && isset($fieldData[$key])){
                     $defaultData[$key] = $fieldData[$key];
                 }
             }
