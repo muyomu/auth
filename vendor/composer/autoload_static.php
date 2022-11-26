@@ -17,6 +17,7 @@ class ComposerStaticInite2c5ce355ae324a1834d914bfd363fb0
             'muyomu\\executor\\' => 16,
             'muyomu\\dpara\\' => 13,
             'muyomu\\database\\' => 16,
+            'muyomu\\config\\' => 14,
             'muyomu\\auth\\' => 12,
             'muyomu\\aop\\' => 11,
         ),
@@ -54,6 +55,10 @@ class ComposerStaticInite2c5ce355ae324a1834d914bfd363fb0
         'muyomu\\database\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/database/src',
+        ),
+        'muyomu\\config\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/config/src',
         ),
         'muyomu\\auth\\' => 
         array (

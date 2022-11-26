@@ -16,6 +16,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "muyomu/framework": "2.0.11"
+        "muyomu/framework": "2.0.12"
     }
 }
