@@ -2,7 +2,7 @@
 
 namespace muyomu\auth\base;
 
-class authorizator
+class Authorizator
 {
     private array $roles = array();
 

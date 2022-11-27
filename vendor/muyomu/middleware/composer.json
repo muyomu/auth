@@ -14,7 +14,7 @@
             "email": "bhfqlz@qq.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "muyomu/http": "2.1.0"
     }

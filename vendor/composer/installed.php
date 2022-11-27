@@ -3,7 +3,7 @@
         'name' => 'muyomu/auth',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '2015ac7137427d7b696db81e6d72632f5c8f671d',
+        'reference' => 'c89fbc335cba4fc117bd2087ece29ea5ee278fba',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'muyomu/auth' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '2015ac7137427d7b696db81e6d72632f5c8f671d',
+            'reference' => 'c89fbc335cba4fc117bd2087ece29ea5ee278fba',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -56,14 +56,12 @@
             'dev_requirement' => false,
         ),
         'muyomu/middleware' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '173a7f6e178e6564188ba8a640256782d4a30e46',
+            'pretty_version' => 'v1.0.1',
+            'version' => '1.0.1.0',
+            'reference' => '5e482546260761c997c2888063e4a0afa029138e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../muyomu/middleware',
-            'aliases' => array(
-                0 => '9999999-dev',
-            ),
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'muyomu/router' => array(
