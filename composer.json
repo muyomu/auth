@@ -1,5 +1,5 @@
 {
-    "name": "muyomu/auth",
+    "name": "muyomu/security",
     "description": "The auth framework for muyomu web framework",
     "type": "library",
     "license": "apache-2.0",
