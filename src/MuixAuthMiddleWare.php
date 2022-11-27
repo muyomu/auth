@@ -2,9 +2,9 @@
 
 namespace muyomu\auth;
 
-use muyomu\framework\base\BaseMiddleWare;
 use muyomu\http\Request;
 use muyomu\http\Response;
+use muyomu\middleware\BaseMiddleWare;
 
 class MuixAuthMiddleWare implements BaseMiddleWare {
 
