@@ -16,6 +16,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "muyomu/middleware": "1.0.1"
+        "muyomu/middleware": "1.0.2"
     }
 }
