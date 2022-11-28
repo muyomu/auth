@@ -9,6 +9,16 @@ class AuthenticationToken
     private string $credential;
 
     /**
+     * @param string $principle
+     * @param string $credential
+     */
+    public function __construct(string $principle, string $credential)
+    {
+        $this->principle = $principle;
+        $this->credential = $credential;
+    }
+
+    /**
      * @return string
      */
     public function getPrinciple(): string
@@ -17,10 +27,10 @@ class AuthenticationToken
     }
 
     /**
-     * @param string $principle
+     * @return string
      */
-    public function setPrinciple(string $principle): void
+    public function getCredential(): string
     {
-        $this->principle = $principle;
+        return $this->credential;
     }
 }

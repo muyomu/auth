@@ -4,25 +4,7 @@ namespace muyomu\auth\base;
 
 class Authenticator
 {
-    private string $requestCredential;
-
     private string $siteCredentials;
-
-    /**
-     * @return string
-     */
-    public function getRequestCredential(): string
-    {
-        return $this->requestCredential;
-    }
-
-    /**
-     * @param string $requestCredential
-     */
-    public function setRequestCredential(string $requestCredential): void
-    {
-        $this->requestCredential = $requestCredential;
-    }
 
     /**
      * @return string

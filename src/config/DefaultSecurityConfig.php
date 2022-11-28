@@ -2,6 +2,7 @@
 
 namespace muyomu\auth\config;
 
+use muyomu\auth\utility\DefaultRealm;
 use muyomu\config\annotation\Configuration;
 use muyomu\config\GenericConfig;
 
@@ -15,6 +16,14 @@ class DefaultSecurityConfig extends GenericConfig
         "mode"=>"obverse",
         "tokenName"=>"token",
         "obverse"=>[],
-        "filter"=>[]
+        "filter"=>[],
+        "realm"=>DefaultRealm::class,
+        "jwt"=>[
+            "header"=>[
+                "alg"=>"HS256",
+                "type"=>"JWT"
+            ],
+            "key"=>"123456"
+        ]
     ];
 }
