@@ -2,8 +2,8 @@
 
 namespace muyomu\auth\client;
 
-use Muyomu\Auth\base\Authenticator;
-use Muyomu\Auth\base\Authorizator;
+use muyomu\auth\base\Authenticator;
+use muyomu\auth\base\Authorizator;
 use muyomu\auth\base\Principle;
 
 interface Realm{

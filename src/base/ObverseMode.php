@@ -86,6 +86,14 @@ class ObverseMode implements ModeClient
 
             $privileges = $this->defaultSecurityConfig->getOptions("obverse.{$requestUrl}.privileges");
 
+            if (is_null($roles)){
+                $roles = array();
+            }
+
+            if (is_null($privileges)){
+                $privileges = array();
+            }
+
             if ($this->checkRolesAndPrivileges->check($roles,$dataRoles) && $this->checkRolesAndPrivileges->check($privileges,$dataPrivileges)){
                 return;
             }else{
