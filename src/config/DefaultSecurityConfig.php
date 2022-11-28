@@ -27,6 +27,7 @@ class DefaultSecurityConfig extends GenericConfig
             ],
             "key"=>"123456",
             "identifier"=>"uid"
-        ]
+        ],
+        "uid"=>"uid"
     ];
 }

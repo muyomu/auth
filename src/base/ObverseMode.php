@@ -45,7 +45,7 @@ class ObverseMode implements ModeClient
 
         $obverseUrls = array_keys($this->defaultSecurityConfig->getOptions("obverse"));
 
-        if (!array_key_exists($requestUrl,$obverseUrls)){
+        if (array_key_exists($requestUrl,$obverseUrls)){
             return;
         }
 
@@ -62,7 +62,7 @@ class ObverseMode implements ModeClient
         }
 
         try {
-            $authorizator = self::getRealmInstance();
+            $realm = self::getRealmInstance();
 
             $payload = $this->jwt->getPayload($token);
 
@@ -72,15 +72,15 @@ class ObverseMode implements ModeClient
 
             $principle->setIdentifier($payload[$uid]);
 
-            $authorizator = $authorizator->authorization($principle);
+            $database = $realm->authorization($principle);
 
-            $roles = $authorizator->getRoles();
+            $dataRoles = $database->getRoles();
 
-            $privileges = $authorizator->getPrivileges();
+            $dataPrivileges = $database->getPrivileges();
 
-            $dataRoles = $this->defaultSecurityConfig->getOptions("obverse.{$requestUrl}.roles");
+            $roles = $this->defaultSecurityConfig->getOptions("obverse.{$requestUrl}.roles");
 
-            $dataPrivileges = $this->defaultSecurityConfig->getOptions("obverse.{$requestUrl}.privileges");
+            $privileges = $this->defaultSecurityConfig->getOptions("obverse.{$requestUrl}.privileges");
 
             if (in_array($roles,$dataRoles) && in_array($privileges,$dataPrivileges)){
                 return;

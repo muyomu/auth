@@ -54,7 +54,7 @@ class Jwt
             return false;
 
         //签名验证
-        if ($this->signature($base64header . '.' . $base64payload, $this->defaultSecurityConfig->getOptions("key"), $base64decodeheader['alg']) !== $sign)
+        if ($this->signature($base64header . '.' . $base64payload, $this->defaultSecurityConfig->getOptions("jwt.key"), $this->defaultSecurityConfig->getOptions("jwt.header.alg"))!== $sign)
             return false;
 
         $payload = json_decode($this->base64UrlDecode($base64payload), JSON_OBJECT_AS_ARRAY);
