@@ -6,6 +6,7 @@ use muyomu\auth\client\ModeClient;
 use muyomu\auth\client\Realm;
 use muyomu\auth\config\DefaultSecurityConfig;
 use muyomu\auth\exception\NotCheckedUserException;
+use muyomu\auth\utility\CheckRolesAndPrivileges;
 use muyomu\auth\utility\Jwt;
 use muyomu\http\Request;
 use muyomu\http\Response;
@@ -32,10 +33,13 @@ class ObverseMode implements ModeClient
 
     private Jwt $jwt;
 
+    private CheckRolesAndPrivileges $checkRolesAndPrivileges;
+
     public function __construct()
     {
         $this->defaultSecurityConfig = new DefaultSecurityConfig();
         $this->jwt = new Jwt();
+        $this->checkRolesAndPrivileges = new CheckRolesAndPrivileges();
     }
 
 
@@ -82,7 +86,7 @@ class ObverseMode implements ModeClient
 
             $privileges = $this->defaultSecurityConfig->getOptions("obverse.{$requestUrl}.privileges");
 
-            if (in_array($roles,$dataRoles) && in_array($privileges,$dataPrivileges)){
+            if ($this->checkRolesAndPrivileges->check($roles,$dataRoles) && $this->checkRolesAndPrivileges->check($privileges,$dataPrivileges)){
                 return;
             }else{
                 $response->doExceptionResponse(new NotCheckedUserException(),403);
