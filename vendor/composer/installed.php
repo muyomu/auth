@@ -1,24 +1,15 @@
 <?php return array(
     'root' => array(
-        'name' => 'muyomu/auth',
+        'name' => 'muyomu/security',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '95b7a0a920ccaa966c78002bb33c8e6511d38665',
+        'reference' => '77949697b1ebc78a6d95334fbc36965ecc1663f1',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'muyomu/auth' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '95b7a0a920ccaa966c78002bb33c8e6511d38665',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../../',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'muyomu/config' => array(
             'pretty_version' => 'v1.1.2',
             'version' => '1.1.2.0',
@@ -70,6 +61,15 @@
             'reference' => '472e0ae5710b9c53a7f83d0a5f9eed0c53b0577d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../muyomu/router',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'muyomu/security' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '77949697b1ebc78a6d95334fbc36965ecc1663f1',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
