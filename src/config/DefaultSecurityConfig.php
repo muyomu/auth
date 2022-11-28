@@ -10,5 +10,11 @@ class DefaultSecurityConfig extends GenericConfig
 {
     protected string $configClass = self::class;
 
-    protected array $configData = [];
+    protected array $configData = [
+        "security"=>false,
+        "mode"=>"obverse",
+        "tokenName"=>"token",
+        "obverse"=>[],
+        "filter"=>[]
+    ];
 }

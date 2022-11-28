@@ -3,7 +3,7 @@
         'name' => 'muyomu/security',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '77949697b1ebc78a6d95334fbc36965ecc1663f1',
+        'reference' => '7fa8634f1c192a37e75dd62528fc2c549d7966c0',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -67,7 +67,7 @@
         'muyomu/security' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '77949697b1ebc78a6d95334fbc36965ecc1663f1',
+            'reference' => '7fa8634f1c192a37e75dd62528fc2c549d7966c0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
