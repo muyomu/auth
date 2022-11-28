@@ -27,11 +27,11 @@ class Jwt
      */
     public function getToken(array $payload):string
     {
-        $base64header=self::base64UrlEncode(json_encode($this->defaultSecurityConfig->getOptions("header"),JSON_UNESCAPED_UNICODE));
+        $base64header=$this->base64UrlEncode(json_encode($this->defaultSecurityConfig->getOptions("jwt.header"),JSON_UNESCAPED_UNICODE));
 
-        $base64payload=self::base64UrlEncode(json_encode($payload,JSON_UNESCAPED_UNICODE));
+        $base64payload=$this->base64UrlEncode(json_encode($payload,JSON_UNESCAPED_UNICODE));
 
-        return $base64header.'.'.$base64payload.'.'.self::signature($base64header.'.'.$base64payload,$this->defaultSecurityConfig->getOptions("key"),$this->defaultSecurityConfig->getOptions("header.alg"));
+        return $base64header.'.'.$base64payload.'.'.$this->signature($base64header.'.'.$base64payload,$this->defaultSecurityConfig->getOptions("jwt.key"),$this->defaultSecurityConfig->getOptions("jwt.header.alg"));
     }
 
     /**
@@ -57,7 +57,7 @@ class Jwt
         if ($this->signature($base64header . '.' . $base64payload, $this->defaultSecurityConfig->getOptions("key"), $base64decodeheader['alg']) !== $sign)
             return false;
 
-        $payload = json_decode(self::base64UrlDecode($base64payload), JSON_OBJECT_AS_ARRAY);
+        $payload = json_decode($this->base64UrlDecode($base64payload), JSON_OBJECT_AS_ARRAY);
 
         //签发时间大于当前服务器时间验证失败
         if (isset($payload['iat']) && $payload['iat'] > time())
@@ -68,10 +68,19 @@ class Jwt
             return false;
 
         //该nbf时间之前不接收处理该Token
-        if (isset($payload['nbf']) && $payload['nbf'] < time())
+        if (isset($payload['nbf']) && $payload['nbf'] > time())
             return false;
 
         return true;
+    }
+
+    public function getPayload(string $token):array{
+
+        $tokens = explode('.', $token);
+
+        list($base64header, $base64payload, $sign) = $tokens;
+
+        return json_decode($this->base64UrlDecode($base64payload), JSON_OBJECT_AS_ARRAY);
     }
 
     /**
