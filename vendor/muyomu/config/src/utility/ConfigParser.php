@@ -63,10 +63,8 @@ class ConfigParser
                             $this->resolveConfigData($fieldData[$key],$defaultData[$key]);
                         }
                     }else{
-                        if (!$this->checkForAssocArray($fieldData[$key])){
-                            foreach ($fieldData[$key] as $data){
-                                $defaultData[$key][] = $data;
-                            }
+                        foreach ($fieldData[$key] as $data){
+                            $defaultData[$key][] = $data;
                         }
                     }
                 }else{

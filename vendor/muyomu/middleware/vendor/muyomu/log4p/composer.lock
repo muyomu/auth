@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5240aa9c867e5236056d87cbdbc029fd",
+    "content-hash": "2d9c463da090767cf46a0655d34ded29",
     "packages": [
         {
             "name": "muyomu/config",
-            "version": "v1.1.2",
+            "version": "v1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/config.git",
-                "reference": "11a05808815ed44197dda9c5e8ef5de298c8da84"
+                "reference": "cc4868bac87038e17b61ed929221cbd679306540"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/config/zipball/11a05808815ed44197dda9c5e8ef5de298c8da84",
-                "reference": "11a05808815ed44197dda9c5e8ef5de298c8da84",
+                "url": "https://api.github.com/repos/muyomu/config/zipball/cc4868bac87038e17b61ed929221cbd679306540",
+                "reference": "cc4868bac87038e17b61ed929221cbd679306540",
                 "shasum": ""
             },
             "type": "library",
@@ -39,9 +39,9 @@
             "description": "The config framework for muyomu web framework",
             "support": {
                 "issues": "https://github.com/muyomu/config/issues",
-                "source": "https://github.com/muyomu/config/tree/v1.1.2"
+                "source": "https://github.com/muyomu/config/tree/v1.1.4"
             },
-            "time": "2022-11-27T06:40:46+00:00"
+            "time": "2022-11-28T09:34:31+00:00"
         }
     ],
     "packages-dev": [],
