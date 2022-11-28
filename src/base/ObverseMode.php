@@ -24,6 +24,14 @@ class ObverseMode implements ModeClient
 
     public function handle(Request $request, Response $response): void
     {
+        $requestUrl = $request->getDbClient()->select("rule")->getData()->getRout();
+
+        $obverseUrls = array_keys($this->defaultSecurityConfig->getOptions("obverse"));
+
+        if (!array_key_exists($requestUrl,$obverseUrls)){
+            return;
+        }
+
         $token = $request->getHeader($this->defaultSecurityConfig->getOptions("tokenName"));
 
         if (is_null($token)){
@@ -35,5 +43,6 @@ class ObverseMode implements ModeClient
         if (!$result){
             $response->doExceptionResponse(new NotCheckedUserException(),403);
         }
+
     }
 }
