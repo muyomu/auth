@@ -49,7 +49,7 @@ class ObverseMode implements ModeClient
 
         $obverseUrls = array_keys($this->defaultSecurityConfig->getOptions("obverse"));
 
-        if (array_key_exists($requestUrl,$obverseUrls)){
+        if (in_array($requestUrl,$obverseUrls)){
             return;
         }
 
@@ -72,7 +72,7 @@ class ObverseMode implements ModeClient
 
             $principle = new Principle();
 
-            $uid = $this->defaultSecurityConfig->getOptions("uid");
+            $uid = $this->defaultSecurityConfig->getOptions("jwt.identifier");
 
             $principle->setIdentifier($payload[$uid]);
 

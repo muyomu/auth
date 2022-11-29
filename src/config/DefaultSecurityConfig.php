@@ -15,10 +15,7 @@ class DefaultSecurityConfig extends GenericConfig
         "security"=>false,
         "mode"=>"obverse",
         "tokenName"=>"token",
-        "obverse"=>[
-            "test"=>"test"
-        ],
-        "filter"=>[],
+        "obverse"=>[],
         "realm"=>DefaultRealm::class,
         "jwt"=>[
             "header"=>[
@@ -27,7 +24,6 @@ class DefaultSecurityConfig extends GenericConfig
             ],
             "key"=>"123456",
             "identifier"=>"uid"
-        ],
-        "uid"=>"uid"
+        ]
     ];
 }

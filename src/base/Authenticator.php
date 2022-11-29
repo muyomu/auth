@@ -4,7 +4,7 @@ namespace muyomu\auth\base;
 
 class Authenticator
 {
-    private string $siteCredentials;
+    private string $siteCredentials = "@123@321@7788@8877";
 
     /**
      * @return string
