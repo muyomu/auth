@@ -49,7 +49,7 @@ class ObverseMode implements ModeClient
 
         $obverseUrls = array_keys($this->defaultSecurityConfig->getOptions("obverse"));
 
-        if (in_array($requestUrl,$obverseUrls)){
+        if (!in_array($requestUrl,$obverseUrls)){
             return;
         }
 
