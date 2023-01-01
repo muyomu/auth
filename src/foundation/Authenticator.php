@@ -1,10 +1,10 @@
 <?php
 
-namespace muyomu\auth\fundation;
+namespace muyomu\auth\foundation;
 
 class Authenticator
 {
-    private string $siteCredentials = "@123@321@7788@8877";
+    private string $siteCredentials;
 
     /**
      * @return string

@@ -1,6 +1,6 @@
 <?php
 
-namespace muyomu\auth\fundation;
+namespace muyomu\auth\foundation;
 
 use muyomu\auth\generic\ModeClient;
 use muyomu\auth\generic\Realm;

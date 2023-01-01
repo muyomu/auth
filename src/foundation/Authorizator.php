@@ -1,6 +1,6 @@
 <?php
 
-namespace muyomu\auth\fundation;
+namespace muyomu\auth\foundation;
 
 class Authorizator
 {

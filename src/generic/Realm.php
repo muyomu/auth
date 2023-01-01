@@ -2,9 +2,9 @@
 
 namespace muyomu\auth\generic;
 
-use muyomu\auth\fundation\Authenticator;
-use muyomu\auth\fundation\Authorizator;
-use muyomu\auth\fundation\Principle;
+use muyomu\auth\foundation\Authenticator;
+use muyomu\auth\foundation\Authorizator;
+use muyomu\auth\foundation\Principle;
 
 interface Realm{
 

@@ -2,7 +2,7 @@
 
 namespace muyomu\auth;
 
-use muyomu\auth\fundation\ObverseMode;
+use muyomu\auth\foundation\ObverseMode;
 use muyomu\auth\config\DefaultSecurityConfig;
 use muyomu\auth\utility\ModeExecuteContext;
 use muyomu\http\Request;

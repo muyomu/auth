@@ -2,8 +2,8 @@
 
 namespace muyomu\auth\utility;
 
-use muyomu\auth\fundation\AuthenticationToken;
-use muyomu\auth\fundation\Principle;
+use muyomu\auth\foundation\AuthenticationToken;
+use muyomu\auth\foundation\Principle;
 use muyomu\auth\generic\Realm;
 use muyomu\auth\config\DefaultSecurityConfig;
 use muyomu\log4p\Log4p;
