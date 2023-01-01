@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f4439fefc3668e7ef5a1e76685dac7d",
+    "content-hash": "0416c3f3137cfc72c55f0b3db4a69651",
     "packages": [
         {
             "name": "muyomu/config",
@@ -79,6 +79,47 @@
                 "source": "https://github.com/muyomu/database/tree/v2.0.2"
             },
             "time": "2022-11-26T13:00:09+00:00"
+        },
+        {
+            "name": "muyomu/dynamic",
+            "version": "v2.0.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muyomu/dynamic.git",
+                "reference": "53fb4e88be08b3243e88d2a9873d9338e50c4433"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muyomu/dynamic/zipball/53fb4e88be08b3243e88d2a9873d9338e50c4433",
+                "reference": "53fb4e88be08b3243e88d2a9873d9338e50c4433",
+                "shasum": ""
+            },
+            "require": {
+                "muyomu/database": "2.0.2",
+                "muyomu/http": "2.1.3",
+                "muyomu/router": "2.0.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "muyomu\\dpara\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian"
+                }
+            ],
+            "description": "The dynamic paramater resolver of muyomu framework",
+            "support": {
+                "issues": "https://github.com/muyomu/dynamic/issues",
+                "source": "https://github.com/muyomu/dynamic/tree/v2.0.16"
+            },
+            "time": "2022-11-28T09:41:10+00:00"
         },
         {
             "name": "muyomu/http",

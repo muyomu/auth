@@ -15,7 +15,9 @@ class DefaultSecurityConfig extends GenericConfig
         "security"=>false,
         "mode"=>"obverse",
         "tokenName"=>"token",
-        "obverse"=>[],
+        "obverse"=>[
+            "keyForCheck"=>array()
+        ],
         "realm"=>DefaultRealm::class,
         "jwt"=>[
             "header"=>[

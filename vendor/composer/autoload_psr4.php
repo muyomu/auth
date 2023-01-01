@@ -10,6 +10,7 @@ return array(
     'muyomu\\middleware\\' => array($vendorDir . '/muyomu/middleware/src'),
     'muyomu\\log4p\\' => array($vendorDir . '/muyomu/log4p/src'),
     'muyomu\\http\\' => array($vendorDir . '/muyomu/http/src'),
+    'muyomu\\dpara\\' => array($vendorDir . '/muyomu/dynamic/src'),
     'muyomu\\database\\' => array($vendorDir . '/muyomu/database/src'),
     'muyomu\\config\\' => array($vendorDir . '/muyomu/config/src'),
     'muyomu\\auth\\' => array($baseDir . '/src'),

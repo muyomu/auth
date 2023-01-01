@@ -19,6 +19,8 @@
         "muyomu/middleware": "1.0.4",
         "muyomu/config": "1.1.4",
         "muyomu/http": "2.1.3",
-        "muyomu/log4p": "1.1.4"
+        "muyomu/log4p": "1.1.4",
+        "muyomu/dynamic": "v2.0.16",
+        "muyomu/router": "2.0.6"
     }
 }

@@ -13,6 +13,7 @@ class ComposerStaticInite2c5ce355ae324a1834d914bfd363fb0
             'muyomu\\middleware\\' => 18,
             'muyomu\\log4p\\' => 13,
             'muyomu\\http\\' => 12,
+            'muyomu\\dpara\\' => 13,
             'muyomu\\database\\' => 16,
             'muyomu\\config\\' => 14,
             'muyomu\\auth\\' => 12,
@@ -35,6 +36,10 @@ class ComposerStaticInite2c5ce355ae324a1834d914bfd363fb0
         'muyomu\\http\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/http/src',
+        ),
+        'muyomu\\dpara\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/dynamic/src',
         ),
         'muyomu\\database\\' => 
         array (

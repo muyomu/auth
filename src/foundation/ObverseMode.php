@@ -7,9 +7,12 @@ use muyomu\auth\generic\Realm;
 use muyomu\auth\config\DefaultSecurityConfig;
 use muyomu\auth\exception\NotCheckedUserException;
 use muyomu\auth\utility\CheckRolesAndPrivileges;
+use muyomu\auth\utility\CheckUrlObverse;
 use muyomu\auth\utility\Jwt;
+use muyomu\database\base\Document;
 use muyomu\http\Request;
 use muyomu\http\Response;
+use muyomu\router\RouterClient;
 use ReflectionClass;
 use ReflectionException;
 
@@ -35,11 +38,14 @@ class ObverseMode implements ModeClient
 
     private CheckRolesAndPrivileges $checkRolesAndPrivileges;
 
+    private CheckUrlObverse $checkUrlObverse;
+
     public function __construct()
     {
         $this->defaultSecurityConfig = new DefaultSecurityConfig();
         $this->jwt = new Jwt();
         $this->checkRolesAndPrivileges = new CheckRolesAndPrivileges();
+        $this->checkUrlObverse = new CheckUrlObverse();
     }
 
 
@@ -49,8 +55,12 @@ class ObverseMode implements ModeClient
 
         $obverseUrls = array_keys($this->defaultSecurityConfig->getOptions("obverse"));
 
-        if (!in_array($requestUrl,$obverseUrls)){
-            return;
+        $result = $this->checkUrlObverse->dpara($request,$response,RouterClient::getDatabase());
+
+        if ($result instanceof Document){
+            if (!in_array($requestUrl,$obverseUrls)){
+                return;
+            }
         }
 
         $token = $request->getHeader($this->defaultSecurityConfig->getOptions("tokenName"));
