@@ -2,10 +2,10 @@
 
 namespace muyomu\auth\utility;
 
-use muyomu\auth\base\Authenticator;
-use muyomu\auth\base\Authorizator;
-use muyomu\auth\base\Principle;
-use muyomu\auth\client\Realm;
+use muyomu\auth\fundation\Authenticator;
+use muyomu\auth\fundation\Authorizator;
+use muyomu\auth\fundation\Principle;
+use muyomu\auth\generic\Realm;
 
 class DefaultRealm implements Realm
 {

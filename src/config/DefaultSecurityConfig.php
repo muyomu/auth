@@ -6,7 +6,7 @@ use muyomu\auth\utility\DefaultRealm;
 use muyomu\config\annotation\Configuration;
 use muyomu\config\GenericConfig;
 
-#[Configuration("security")]
+#[Configuration("config_security")]
 class DefaultSecurityConfig extends GenericConfig
 {
     protected string $configClass = self::class;

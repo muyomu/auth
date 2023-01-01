@@ -1,6 +1,6 @@
 <?php
 
-namespace muyomu\auth\base;
+namespace muyomu\auth\fundation;
 
 class Authenticator
 {

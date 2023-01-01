@@ -1,9 +1,9 @@
 <?php
 
-namespace muyomu\auth\base;
+namespace muyomu\auth\fundation;
 
-use muyomu\auth\client\ModeClient;
-use muyomu\auth\client\Realm;
+use muyomu\auth\generic\ModeClient;
+use muyomu\auth\generic\Realm;
 use muyomu\auth\config\DefaultSecurityConfig;
 use muyomu\auth\exception\NotCheckedUserException;
 use muyomu\auth\utility\CheckRolesAndPrivileges;

@@ -1,10 +1,10 @@
 <?php
 
-namespace muyomu\auth\client;
+namespace muyomu\auth\generic;
 
-use muyomu\auth\base\Authenticator;
-use muyomu\auth\base\Authorizator;
-use muyomu\auth\base\Principle;
+use muyomu\auth\fundation\Authenticator;
+use muyomu\auth\fundation\Authorizator;
+use muyomu\auth\fundation\Principle;
 
 interface Realm{
 

@@ -2,7 +2,7 @@
 
 namespace muyomu\auth\utility;
 
-use muyomu\auth\client\ModeClient;
+use muyomu\auth\generic\ModeClient;
 use muyomu\http\Request;
 use muyomu\http\Response;
 
