@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ef43bd8c058acfc4ce3b924e1630b98",
+    "content-hash": "1b70f7591f070fb55f72031c4af450b4",
     "packages": [
         {
             "name": "muyomu/config",
@@ -82,16 +82,16 @@
         },
         {
             "name": "muyomu/dynamic",
-            "version": "v2.1.18",
+            "version": "v2.1.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/dynamic.git",
-                "reference": "107aeef3156290a02eced745d4d626dc7b1df618"
+                "reference": "96cf9fe13150a0d0be5d57608dd0252fd36dd812"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/dynamic/zipball/107aeef3156290a02eced745d4d626dc7b1df618",
-                "reference": "107aeef3156290a02eced745d4d626dc7b1df618",
+                "url": "https://api.github.com/repos/muyomu/dynamic/zipball/96cf9fe13150a0d0be5d57608dd0252fd36dd812",
+                "reference": "96cf9fe13150a0d0be5d57608dd0252fd36dd812",
                 "shasum": ""
             },
             "require": {
@@ -117,9 +117,9 @@
             "description": "The dynamic paramater resolver of muyomu framework",
             "support": {
                 "issues": "https://github.com/muyomu/dynamic/issues",
-                "source": "https://github.com/muyomu/dynamic/tree/v2.1.18"
+                "source": "https://github.com/muyomu/dynamic/tree/v2.1.19"
             },
-            "time": "2023-01-03T11:36:13+00:00"
+            "time": "2023-01-04T05:41:36+00:00"
         },
         {
             "name": "muyomu/http",
