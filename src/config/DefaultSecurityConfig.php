@@ -6,7 +6,7 @@ use muyomu\auth\utility\DefaultRealm;
 use muyomu\config\annotation\Configuration;
 use muyomu\config\GenericConfig;
 
-#[Configuration("config_security")]
+#[Configuration(DefaultSecurityConfig::class)]
 class DefaultSecurityConfig extends GenericConfig
 {
     protected string $configClass = self::class;
@@ -15,9 +15,7 @@ class DefaultSecurityConfig extends GenericConfig
         "security"=>false,
         "mode"=>"obverse",
         "tokenName"=>"token",
-        "obverse"=>[
-            "keyForCheck"=>array()
-        ],
+        "obverse"=>[],
         "realm"=>DefaultRealm::class,
         "jwt"=>[
             "header"=>[

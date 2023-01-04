@@ -102,7 +102,7 @@
             },
             "time": "2022-11-28T09:41:10+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\dpara\\": "src/"
