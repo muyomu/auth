@@ -58,7 +58,7 @@ class ObverseMode implements ModeClient
         $result = $this->checkUrlObverse->dpara($request,$response,RouterClient::getDatabase());
 
         if ($result instanceof Document){
-            if (!in_array($requestUrl,$obverseUrls)){
+            if (!in_array($result->getData()->getRoute(),$obverseUrls)){
                 return;
             }
         }
