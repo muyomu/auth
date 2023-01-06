@@ -10,6 +10,7 @@ use muyomu\auth\utility\CheckRolesAndPrivileges;
 use muyomu\auth\utility\CheckUrlObverse;
 use muyomu\auth\utility\Jwt;
 use muyomu\database\base\Document;
+use muyomu\dpara\exception\UrlNotMatch;
 use muyomu\http\Request;
 use muyomu\http\Response;
 use muyomu\router\RouterClient;
@@ -49,6 +50,9 @@ class ObverseMode implements ModeClient
     }
 
 
+    /**
+     * @throws UrlNotMatch
+     */
     public function handle(Request $request, Response $response): void
     {
         $requestUrl = $request->getDbClient()->select("rule")->getData()->getRoute();

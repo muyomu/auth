@@ -5,6 +5,7 @@ namespace muyomu\auth\utility;
 use muyomu\auth\generic\Dynamic;
 use muyomu\database\base\Document;
 use muyomu\database\DbClient;
+use muyomu\dpara\exception\UrlNotMatch;
 use muyomu\dpara\utility\DparaHelper;
 use muyomu\http\Request;
 use muyomu\http\Response;
@@ -18,9 +19,11 @@ class CheckUrlObverse implements Dynamic
         $this->dparaHelper = new DparaHelper();
     }
 
+    /**
+     * @throws UrlNotMatch
+     */
     public function dpara(Request $request, Response $response, DbClient $dbClient): Document | null
     {
-
         /*
          * 静态路由转换
          */
