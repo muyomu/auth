@@ -19,9 +19,6 @@ class CheckUrlObverse implements Dynamic
         $this->dparaHelper = new DparaHelper();
     }
 
-    /**
-     * @throws UrlNotMatch
-     */
     public function dpara(Request $request, Response $response, DbClient $dbClient): Document | null
     {
         /*
@@ -46,7 +43,7 @@ class CheckUrlObverse implements Dynamic
         if (empty($result)){
             return null;
         }else{
-            $document = $this->dparaHelper->key_exits($static_routes_table,$kk,$result[0],$dbClient->database,$keyCollector,$dataCollector);
+            $document = $this->dparaHelper->key_exits($static_routes_table,$kk,$result[1],$dbClient->database,$keyCollector,$dataCollector);
             if ($document === null){
                 return null;
             }else{
