@@ -38,12 +38,18 @@ class CheckUrlObverse implements Dynamic
         //键值收集器
         $keyCollector = array();
 
-        $document = $this->dparaHelper->key_exits($request,$response,$static_routes_table,$kk,$dbClient->database,$keyCollector,$dataCollector);
+        $result = array_intersect(array_keys($static_routes_table),array_keys($kk));
 
-        if (is_null($document)){
+        if (empty($result)){
             return null;
+        }else{
+            $document = $this->dparaHelper->key_exits($static_routes_table,$kk,$result[0],$dbClient->database,$keyCollector,$dataCollector);
+            if ($document === null){
+                return null;
+            }else{
+                return $document;
+            }
         }
-        return $document;
     }
 
     /*
