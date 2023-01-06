@@ -20,7 +20,7 @@
         "muyomu/config": "1.1.5",
         "muyomu/http": "2.1.4",
         "muyomu/log4p": "1.1.5",
-        "muyomu/dynamic": "v2.2.23",
+        "muyomu/dynamic": "v2.2.24",
         "muyomu/router": "2.0.6"
     }
 }
