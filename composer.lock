@@ -1,9 +1,14 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "1b6b2eb17789175c2fb45599c896735b",
     "packages": [
         {
             "name": "muyomu/config",
             "version": "v1.1.5",
-            "version_normalized": "1.1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/config.git",
@@ -15,9 +20,7 @@
                 "reference": "6f9045d5c9db392e23f4f31cfde63dff0b9966a3",
                 "shasum": ""
             },
-            "time": "2023-01-03T10:25:07+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "muyomu\\config\\": "src/"
@@ -38,12 +41,11 @@
                 "issues": "https://github.com/muyomu/config/issues",
                 "source": "https://github.com/muyomu/config/tree/v1.1.5"
             },
-            "install-path": "../muyomu/config"
+            "time": "2023-01-03T10:25:07+00:00"
         },
         {
             "name": "muyomu/database",
             "version": "v2.0.2",
-            "version_normalized": "2.0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/database.git",
@@ -55,9 +57,7 @@
                 "reference": "5ce80913b931cedd6ffb9d1559e2919f9db85d8a",
                 "shasum": ""
             },
-            "time": "2022-11-26T13:00:09+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "muyomu\\database\\": "src/"
@@ -78,12 +78,11 @@
                 "issues": "https://github.com/muyomu/database/issues",
                 "source": "https://github.com/muyomu/database/tree/v2.0.2"
             },
-            "install-path": "../muyomu/database"
+            "time": "2022-11-26T13:00:09+00:00"
         },
         {
             "name": "muyomu/dynamic",
             "version": "v2.2.21",
-            "version_normalized": "2.2.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/dynamic.git",
@@ -100,9 +99,7 @@
                 "muyomu/http": "2.1.4",
                 "muyomu/router": "2.0.6"
             },
-            "time": "2023-01-06T12:29:15+00:00",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\dpara\\": "src/"
@@ -122,12 +119,11 @@
                 "issues": "https://github.com/muyomu/dynamic/issues",
                 "source": "https://github.com/muyomu/dynamic/tree/v2.2.21"
             },
-            "install-path": "../muyomu/dynamic"
+            "time": "2023-01-06T12:29:15+00:00"
         },
         {
             "name": "muyomu/http",
             "version": "v2.1.4",
-            "version_normalized": "2.1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/http.git",
@@ -145,9 +141,7 @@
                 "muyomu/log4p": "1.1.5",
                 "muyomu/router": "2.0.6"
             },
-            "time": "2023-01-03T11:33:07+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "muyomu\\http\\": "src/"
@@ -168,12 +162,11 @@
                 "issues": "https://github.com/muyomu/http/issues",
                 "source": "https://github.com/muyomu/http/tree/v2.1.4"
             },
-            "install-path": "../muyomu/http"
+            "time": "2023-01-03T11:33:07+00:00"
         },
         {
             "name": "muyomu/log4p",
             "version": "v1.1.5",
-            "version_normalized": "1.1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/logger.git",
@@ -188,9 +181,7 @@
             "require": {
                 "muyomu/config": "1.1.5"
             },
-            "time": "2023-01-03T11:31:27+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "muyomu\\log4p\\": "src/"
@@ -211,12 +202,11 @@
                 "issues": "https://github.com/muyomu/logger/issues",
                 "source": "https://github.com/muyomu/logger/tree/v1.1.5"
             },
-            "install-path": "../muyomu/log4p"
+            "time": "2023-01-03T11:31:27+00:00"
         },
         {
             "name": "muyomu/middleware",
             "version": "v1.0.5",
-            "version_normalized": "1.0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/middleware.git",
@@ -231,9 +221,7 @@
             "require": {
                 "muyomu/http": "2.1.4"
             },
-            "time": "2023-01-03T11:38:20+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "muyomu\\middleware\\": "src/"
@@ -254,12 +242,11 @@
                 "issues": "https://github.com/muyomu/middleware/issues",
                 "source": "https://github.com/muyomu/middleware/tree/v1.0.5"
             },
-            "install-path": "../muyomu/middleware"
+            "time": "2023-01-03T11:38:20+00:00"
         },
         {
             "name": "muyomu/router",
             "version": "v2.0.6",
-            "version_normalized": "2.0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/router.git",
@@ -274,9 +261,7 @@
             "require": {
                 "muyomu/database": "2.0.2"
             },
-            "time": "2022-11-26T13:19:24+00:00",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "muyomu\\router\\": "src/"
@@ -297,9 +282,16 @@
                 "issues": "https://github.com/muyomu/router/issues",
                 "source": "https://github.com/muyomu/router/tree/v2.0.6"
             },
-            "install-path": "../muyomu/router"
+            "time": "2022-11-26T13:19:24+00:00"
         }
     ],
-    "dev": true,
-    "dev-package-names": []
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
