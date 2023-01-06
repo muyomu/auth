@@ -4,21 +4,22 @@ namespace muyomu\auth\foundation;
 
 class Principle
 {
-    private string $identifier;
+    private array $payload = array();
 
     /**
-     * @return string
+     * @return array
      */
-    public function getIdentifier(): string
+    public function getPayload(): array
     {
-        return $this->identifier;
+        return $this->payload;
     }
 
     /**
-     * @param string $identifier
+     * @param array $payload
      */
-    public function setIdentifier(string $identifier): void
+    public function setPayload(array $payload): void
     {
-        $this->identifier = $identifier;
+        $this->payload = $payload;
     }
+
 }

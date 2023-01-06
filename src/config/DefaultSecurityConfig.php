@@ -13,7 +13,6 @@ class DefaultSecurityConfig extends GenericConfig
 
     protected array $configData = [
         "security"=>false,
-        "mode"=>"obverse",
         "tokenName"=>"token",
         "obverse"=>[],
         "realm"=>DefaultRealm::class,
@@ -22,8 +21,7 @@ class DefaultSecurityConfig extends GenericConfig
                 "alg"=>"HS256",
                 "type"=>"JWT"
             ],
-            "key"=>"123456",
-            "identifier"=>"uid"
+            "key"=>"123456"
         ]
     ];
 }

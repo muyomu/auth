@@ -5,11 +5,9 @@ namespace muyomu\auth\utility;
 use muyomu\auth\generic\Dynamic;
 use muyomu\database\base\Document;
 use muyomu\database\DbClient;
-use muyomu\dpara\exception\UrlNotMatch;
 use muyomu\dpara\utility\DparaHelper;
 use muyomu\http\Request;
 use muyomu\http\Response;
-use muyomu\log4p\Log4p;
 
 class CheckUrlObverse implements Dynamic
 {

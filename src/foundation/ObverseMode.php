@@ -82,9 +82,7 @@ class ObverseMode implements ModeClient
 
             $principle = new Principle();
 
-            $uid = $this->defaultSecurityConfig->getOptions("jwt.identifier");
-
-            $principle->setIdentifier($payload[$uid]);
+            $principle->setPayload($payload);
 
             $database = $realm->authorization($principle);
 
