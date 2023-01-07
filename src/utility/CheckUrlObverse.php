@@ -5,7 +5,6 @@ namespace muyomu\auth\utility;
 use muyomu\auth\generic\Dynamic;
 use muyomu\database\base\Document;
 use muyomu\database\DbClient;
-use muyomu\dpara\exception\UrlNotMatch;
 use muyomu\dpara\utility\DparaHelper;
 use muyomu\http\Request;
 use muyomu\http\Response;
@@ -38,18 +37,16 @@ class CheckUrlObverse implements Dynamic
         //键值收集器
         $keyCollector = array();
 
-        $result = array_intersect(array_keys($static_routes_table),array_keys($kk));
+        $two =array_keys($kk);
 
-        if (empty($result)){
-            return null;
-        }else{
-            $document = $this->dparaHelper->key_exits($static_routes_table,$kk,$result[1],$dbClient->database,$keyCollector,$dataCollector);
-            if ($document === null){
-                return null;
-            }else{
-                return $document;
+        $document = null;
+
+        foreach ($two as $t){
+            if(array_key_exists($t,$static_routes_table)){
+                $document = $this->dparaHelper->key_exits($static_routes_table,$kk,$t,$dbClient->database,$keyCollector,$dataCollector);
             }
         }
+        return $document;
     }
 
     /*
