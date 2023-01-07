@@ -41,7 +41,9 @@ class Subject
 
         $principle = new Principle();
 
-        $principle->setIdentifier($token->getPrinciple());
+        $principle->setPayload(array(
+            "principle"=>$token->getPrinciple()
+        ));
 
         $authenticator = $realmInstance->authentication($principle);
 
