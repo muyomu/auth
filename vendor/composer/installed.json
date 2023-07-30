@@ -81,50 +81,6 @@
             "install-path": "../muyomu/database"
         },
         {
-            "name": "muyomu/dynamic",
-            "version": "v2.2.26",
-            "version_normalized": "2.2.26.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/muyomu/dynamic.git",
-                "reference": "8b01870f1fa30debd260f7740a4c076871ca953c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/dynamic/zipball/8b01870f1fa30debd260f7740a4c076871ca953c",
-                "reference": "8b01870f1fa30debd260f7740a4c076871ca953c",
-                "shasum": ""
-            },
-            "require": {
-                "muyomu/database": "2.0.2",
-                "muyomu/http": "2.1.6",
-                "muyomu/router": "2.0.6"
-            },
-            "time": "2023-01-07T03:21:36+00:00",
-            "type": "library",
-            "installation-source": "source",
-            "autoload": {
-                "psr-4": {
-                    "muyomu\\dpara\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "mutian"
-                }
-            ],
-            "description": "The dynamic paramater resolver of muyomu framework",
-            "support": {
-                "issues": "https://github.com/muyomu/dynamic/issues",
-                "source": "https://github.com/muyomu/dynamic/tree/v2.2.26"
-            },
-            "install-path": "../muyomu/dynamic"
-        },
-        {
             "name": "muyomu/http",
             "version": "v2.1.6",
             "version_normalized": "2.1.6.0",

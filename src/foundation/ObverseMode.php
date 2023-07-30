@@ -50,9 +50,6 @@ class ObverseMode implements ModeClient
     }
 
 
-    /**
-     * @throws UrlNotMatch
-     */
     public function handle(Request $request, Response $response): void
     {
         $requestUrl = $request->getDbClient()->select("rule")->getData()->getRoute();
