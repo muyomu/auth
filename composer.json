@@ -16,10 +16,10 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "muyomu/middleware": "1.0.8",
+        "muyomu/middleware": "1.0.9",
         "muyomu/config": "1.1.5",
-        "muyomu/http": "2.1.8",
+        "muyomu/http": "2.1.9",
         "muyomu/log4p": "1.1.5",
-        "muyomu/router": "2.0.6"
+        "muyomu/router": "2.0.8"
     }
 }
