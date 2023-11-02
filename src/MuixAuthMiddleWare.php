@@ -18,6 +18,7 @@ class MuixAuthMiddleWare implements BaseMiddleWare {
     public function __construct()
     {
         $this->defaultSecurityConfig = new DefaultSecurityConfig();
+
         $this->context = new ModeExecuteContext();
     }
 
